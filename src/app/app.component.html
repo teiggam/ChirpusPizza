@@ -23,6 +23,20 @@
       </tr> 
     </table>
   </div>
+  <div>
+    <table>
+      <div>
+        <div *ngFor="let category of categories; index as i;">
+          <h3>{{category}}</h3>
+          <div *ngFor="let item of menu; index as i;">
+            <div *ngIf="item.category === category">
+            {{item.name}}:  ${{item.price}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </table>
+  </div>
 
 </body>
   

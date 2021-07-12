@@ -1,5 +1,5 @@
 import { isNgTemplate } from '@angular/compiler';
-import { Component, Pipe } from '@angular/core';
+import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import {MenuItem} from './menuItem';
 
@@ -20,10 +20,11 @@ export class AppComponent {
     {name:"Red Bull", category: "Drinks", price: 3.99},
     {name:"Personal Pizza", category:"Dinner", price: 5.99},
     {name:"Chicken Wings", category: "Dinner", price: 7.99}
-  ]
- 
+  ];
+  categories: string[];
+  constructor() {
+    this.categories = [...new Set(this.menu.map(item => item.category))];
+    console.log(this.categories);
+  }
 
-  
 }
-
-
