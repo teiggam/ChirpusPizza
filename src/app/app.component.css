@@ -1,0 +1,49 @@
+html{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    padding-left: 33%;
+    padding-right: 33%;
+}
+.bg{
+    background-image: url('src/istockphoto-1204634641-612x612.jpg');
+    height: 100%;
+    background-position: left;
+    background-repeat: repeat-x;
+
+}
+table{
+    background-color: lavenderblush;
+    opacity: 75%;
+    box-align: center;
+    border: 3px solid darkslategray;
+    padding: 10px;
+    margin-left:auto;
+    margin-right:auto;
+}
+th{
+    border-bottom: 1px solid black;
+    padding: 5px;
+    color: darkviolet;
+  }
+td{
+      padding-right: 10px;
+  }
+h1{
+    
+      color: darkblue;
+      text-align: center;
+  }
+h2{
+    color:indigo;
+    text-align: center;
+  }
+tr:hover {
+      background-color: #c370ce;
+    }
+tr{
+    text-align: left;
+    padding: 10%;
+}
